@@ -1,6 +1,12 @@
 pipeline {
     agent any  // This means Jenkins will run the pipeline on any available agent
 
+  stages {
+        stage('First stage') {
+            steps {
+                echo 'Fetchingthe application...'
+            }
+        }
     stages {
         stage('Build') {
             steps {
