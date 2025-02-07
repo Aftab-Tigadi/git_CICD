@@ -1,0 +1,24 @@
+pipeline {
+    agent any  // This means Jenkins will run the pipeline on any available agent
+
+    stages {
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        stage('Build') {
+            steps {
+                echo 'This is build stage'
+            }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to production...'
+            }
+        }
+    }
+
+
