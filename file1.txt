@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('First Stage') {
             steps {
-                echo 'Fetching the application...'
+                git 'https://github.com/Aftab-Tigadi/git_CICD.git'
             }
         }
 
@@ -25,4 +25,5 @@ pipeline {
         }
     }
 }
+
 
